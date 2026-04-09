@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-[13px] font-medium text-white/70 hover:text-white transition-colors tracking-widest uppercase"
+                className="text-[13px] font-medium text-white hover:text-white/70 transition-colors tracking-widest uppercase"
               >
                 {link.label}
               </a>

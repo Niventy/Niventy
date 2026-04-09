@@ -44,14 +44,64 @@ export const Work: React.FC = () => {
   return (
     <section id="work" className="py-10 px-4 md:px-6">
       <div className="max-w-[1200px] mx-auto bg-dark-950 rounded-3xl overflow-hidden">
-      {/* Dark statement header */}
-      <div className="py-20 md:py-24 text-center">
-        <div className="px-8 md:px-16">
-          <p className="font-accent italic text-white/40 text-lg md:text-xl mb-6">Cases</p>
-          <h2 className="text-3xl md:text-5xl lg:text-[64px] font-display font-bold text-white tracking-display leading-[1.05] max-w-4xl mx-auto">
-            Pas pour tout le monde. Juste pour les marques qui veulent être <span className="font-accent italic normal-case text-accent-400 font-normal">impossibles à ignorer.</span>
-          </h2>
+      {/* Dark statement header + ROI table */}
+      <div className="py-16 md:py-20 text-center px-8 md:px-16">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-sm bg-accent-500 text-white text-xs font-bold uppercase tracking-widest mb-8">
+          NOS RÉSULTATS
         </div>
+        <h2 className="text-3xl md:text-5xl lg:text-[56px] font-display font-bold text-white tracking-display leading-[1.05] max-w-4xl mx-auto mb-6">
+          Pas pour tout le monde. Juste pour les marques qui veulent être <span className="font-accent italic normal-case text-accent-400 font-normal">impossibles à ignorer.</span>
+        </h2>
+        <p className="text-white/40 text-sm md:text-base max-w-2xl mx-auto mb-12">
+          Le paid media ce n'est pas dépenser plus, c'est dépenser avec un objectif. Quand les ads sont construites sur un ciblage clair, des créatifs forts et une optimisation constante, l'investissement se transforme en croissance.
+        </p>
+
+        {/* ROI Table */}
+        <div className="max-w-4xl mx-auto overflow-x-auto mb-16">
+          <table className="w-full text-left">
+            <thead>
+              <tr className="border-b border-white/10">
+                <th className="py-3 px-4 text-xs font-bold text-white uppercase tracking-wider">Client</th>
+                <th className="py-3 px-4 text-xs font-bold text-white uppercase tracking-wider">Investissement</th>
+                <th className="py-3 px-4 text-xs font-bold text-white uppercase tracking-wider">Revenus</th>
+                <th className="py-3 px-4 text-xs font-bold text-white uppercase tracking-wider">Leads</th>
+                <th className="py-3 px-4 text-xs font-bold text-white uppercase tracking-wider">ROAS</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/60 text-sm">
+              <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                <td className="py-3 px-4 text-white font-medium">Skello</td>
+                <td className="py-3 px-4">3 000€</td>
+                <td className="py-3 px-4 text-emerald-400 font-medium">26 512€</td>
+                <td className="py-3 px-4">146</td>
+                <td className="py-3 px-4 text-accent-400 font-bold">8.84</td>
+              </tr>
+              <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                <td className="py-3 px-4 text-white font-medium">Lafaurie</td>
+                <td className="py-3 px-4">3 000€</td>
+                <td className="py-3 px-4 text-emerald-400 font-medium">32 415€</td>
+                <td className="py-3 px-4">107</td>
+                <td className="py-3 px-4 text-accent-400 font-bold">10.81</td>
+              </tr>
+              <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                <td className="py-3 px-4 text-white font-medium">Les Others</td>
+                <td className="py-3 px-4">3 000€</td>
+                <td className="py-3 px-4 text-emerald-400 font-medium">31 021€</td>
+                <td className="py-3 px-4">104</td>
+                <td className="py-3 px-4 text-accent-400 font-bold">10.34</td>
+              </tr>
+              <tr className="border-b border-white/5 hover:bg-white/5 transition-colors">
+                <td className="py-3 px-4 text-white font-medium">Delsey</td>
+                <td className="py-3 px-4">1 500€</td>
+                <td className="py-3 px-4 text-emerald-400 font-medium">12 817€</td>
+                <td className="py-3 px-4">47</td>
+                <td className="py-3 px-4 text-accent-400 font-bold">8.54</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-white/30 text-sm mb-2">Chez Niventy, chaque euro investi travaille pour vous.</p>
       </div>
 
       {/* Cases grid */}
