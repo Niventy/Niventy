@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p backup)",
+      "Bash(cp -r components backup/)",
+      "Bash(cp index.tsx backup/)",
+      "Bash(cp types.ts backup/)",
+      "Bash(cp index.html backup/)",
+      "Bash(pip install:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(python3 -c:*)",
+      "Bash(node -e \"console.log\\(''ok''\\)\")",
+      "Bash(node -e 'const fs=require\\(\"\"fs\"\"\\); fs.writeFileSync\\(\"\"C:/Users/Alexandre/niventy-website/.claude/plans/misty-dazzling-pearl-agent-a81ea301416abdfa3.md\"\", \"\"test\"\"\\); console.log\\(\"\"ok\"\"\\)')",
+      "Bash(node -e \":*)",
+      "Bash(node -e \"const fs=require\\(''fs''\\);fs.writeFileSync\\(''C:/Users/Alexandre/niventy-website/.claude/plans/misty-dazzling-pearl-agent-a81ea301416abdfa3.md'',''# Plan placeholder\\\\n''\\);console.log\\(''ok''\\)\")",
+      "Bash(grep -c 'text-\\\\[7px\\\\]\\\\|text-\\\\[8px\\\\]\\\\|text-\\\\[9px\\\\]\\\\|text-\\\\[10px\\\\]\\\\|text-\\\\[11px\\\\]' *.tsx)",
+      "Bash(grep -v ':0$')",
+      "Bash(rm -f BentoGrid.tsx Stats.tsx SystemArchitecture.tsx SectionLabel.tsx)",
+      "Bash(ls *.tsx)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}
