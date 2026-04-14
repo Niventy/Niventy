@@ -102,6 +102,109 @@ export const Work: React.FC = () => {
         </div>
 
         <p className="text-white/30 text-sm mb-2">Chez Niventy, chaque euro investi travaille pour vous.</p>
+
+        {/* Stats Donut Charts */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto mt-16">
+          {/* E-commerce - ROI x5 */}
+          <div className="flex flex-col items-center group">
+            <div className="relative w-36 h-36 mb-5">
+              <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="12" />
+                <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradEcom)" strokeWidth="12" strokeLinecap="round"
+                  strokeDasharray={`${(83 / 100) * 314} 314`}
+                  className="transition-all duration-1000"
+                />
+                <defs>
+                  <linearGradient id="gradEcom" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#10b981" />
+                    <stop offset="100%" stopColor="#34d399" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="text-3xl font-bold text-white">x5</span>
+                <span className="text-[10px] text-white/40 uppercase tracking-wider">ROI</span>
+              </div>
+            </div>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">E-Commerce</h4>
+            <p className="text-white/40 text-xs text-center leading-relaxed">Jusqu'à x5 de retour<br/>sur investissement pub</p>
+          </div>
+
+          {/* CPA -50% */}
+          <div className="flex flex-col items-center group">
+            <div className="relative w-36 h-36 mb-5">
+              <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="12" />
+                <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradCpa)" strokeWidth="12" strokeLinecap="round"
+                  strokeDasharray={`${(50 / 100) * 314} 314`}
+                  className="transition-all duration-1000"
+                />
+                <defs>
+                  <linearGradient id="gradCpa" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#f59e0b" />
+                    <stop offset="100%" stopColor="#fbbf24" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="text-3xl font-bold text-white">-50%</span>
+                <span className="text-[10px] text-white/40 uppercase tracking-wider">CPA</span>
+              </div>
+            </div>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">Coût d'Acquisition</h4>
+            <p className="text-white/40 text-xs text-center leading-relaxed">Réduction CPA de 50%<br/>en scalant le budget</p>
+          </div>
+
+          {/* Lead Gen - CPL -70% */}
+          <div className="flex flex-col items-center group">
+            <div className="relative w-36 h-36 mb-5">
+              <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="12" />
+                <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradLead)" strokeWidth="12" strokeLinecap="round"
+                  strokeDasharray={`${(70 / 100) * 314} 314`}
+                  className="transition-all duration-1000"
+                />
+                <defs>
+                  <linearGradient id="gradLead" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#ec4899" />
+                    <stop offset="100%" stopColor="#f472b6" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="text-3xl font-bold text-white">-70%</span>
+                <span className="text-[10px] text-white/40 uppercase tracking-wider">CPL</span>
+              </div>
+            </div>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">Lead Generation</h4>
+            <p className="text-white/40 text-xs text-center leading-relaxed">Jusqu'à 70% de réduction<br/>du coût par lead</p>
+          </div>
+
+          {/* Notoriété - 60K+ abonnés */}
+          <div className="flex flex-col items-center group">
+            <div className="relative w-36 h-36 mb-5">
+              <svg viewBox="0 0 120 120" className="w-full h-full -rotate-90">
+                <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="12" />
+                <circle cx="60" cy="60" r="50" fill="none" stroke="url(#gradNotoriete)" strokeWidth="12" strokeLinecap="round"
+                  strokeDasharray={`${(75 / 100) * 314} 314`}
+                  className="transition-all duration-1000"
+                />
+                <defs>
+                  <linearGradient id="gradNotoriete" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#6366f1" />
+                    <stop offset="100%" stopColor="#818cf8" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <span className="text-3xl font-bold text-white">60K+</span>
+                <span className="text-[10px] text-white/40 uppercase tracking-wider">abonnés</span>
+              </div>
+            </div>
+            <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">Notoriété</h4>
+            <p className="text-white/40 text-xs text-center leading-relaxed">Gestion de comptes avec<br/>+60 000 abonnés réels</p>
+          </div>
+        </div>
       </div>
 
       {/* Cases grid */}
