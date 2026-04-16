@@ -9,10 +9,10 @@ export const Pricing: React.FC = () => {
 
           {/* Header */}
           <div className="text-center mb-12">
-             <p className="font-accent italic text-slate-400 text-lg md:text-xl mb-4">Notre offre</p>
-             <h2 className="text-3xl md:text-5xl lg:text-[56px] font-display font-bold text-slate-900 mb-4 tracking-display leading-[1.05]">
+             <p className="font-accent italic text-slate-500 text-2xl md:text-3xl mb-6">Notre offre</p>
+             <h2 className="text-3xl md:text-5xl lg:text-[64px] font-display font-bold text-slate-900 mb-4 tracking-display leading-[1.05]">
                 Parlons résultats<br/>
-                <span className="font-accent italic normal-case font-normal text-accent-500">et rentabilité concrète.</span>
+                <span className="text-niventy-500">et rentabilité concrète.</span>
              </h2>
              <p className="text-slate-500 max-w-xl mx-auto text-sm">
                 Une offre "No-Brainer" pour débloquer votre croissance.<br/>
@@ -32,7 +32,7 @@ export const Pricing: React.FC = () => {
                          <div className="flex flex-wrap gap-2 mb-3">
                             <span className="px-2.5 py-1 rounded-md bg-slate-100 text-xs font-semibold text-slate-600">Gestion 1 Mois</span>
                             <span className="px-2.5 py-1 rounded-md bg-slate-100 text-xs font-semibold text-slate-600">10 Créas Incluses</span>
-                            <span className="px-2.5 py-1 rounded-md bg-accent-50 text-xs font-semibold text-accent-600">Spécial Lead Gen</span>
+                            <span className="px-2.5 py-1 rounded-md bg-niventy-50 text-xs font-semibold text-niventy-600">Spécial Lead Gen</span>
                          </div>
                          <p className="text-slate-500 leading-relaxed text-sm">
                             Nous prenons les clés de votre Business Manager pendant 30 jours pour réduire votre coût par prospect (CPL) et installer une structure rentable.
@@ -49,7 +49,7 @@ export const Pricing: React.FC = () => {
                             "Reporting de Performance Hebdo"
                          ].map((item, i) => (
                             <li key={i} className="flex items-start gap-2 text-slate-700">
-                               <div className="mt-0.5 w-4 h-4 rounded-full bg-accent-500 flex items-center justify-center shrink-0 text-white">
+                               <div className="mt-0.5 w-4 h-4 rounded-full bg-niventy-500 flex items-center justify-center shrink-0 text-white">
                                   <Check size={10} strokeWidth={3} />
                                </div>
                                <span className="text-sm">{item}</span>
@@ -63,10 +63,12 @@ export const Pricing: React.FC = () => {
 
                    {/* Right: Price & CTA */}
                    <div className="w-full lg:w-auto text-center min-w-[200px]">
-                      <p className="text-accent-500 text-xs uppercase tracking-wider font-bold mb-2">OFFRE DÉCOUVERTE</p>
-                      <div className="flex items-baseline justify-center gap-1 mb-4">
-                         <span className="text-4xl font-bold text-slate-900 tracking-tight">599€</span>
-                         <span className="text-slate-400 font-medium text-sm">HT</span>
+                      <p className="text-niventy-500 text-xs uppercase tracking-wider font-bold mb-2">OFFRE À PARTIR DE</p>
+                      <div className="flex flex-col items-center mb-4">
+                         <div className="flex items-baseline gap-1">
+                            <span className="text-5xl font-bold text-slate-900 tracking-tight">599€</span>
+                            <span className="text-slate-400 font-medium text-sm">HT</span>
+                         </div>
                       </div>
                       <div className="space-y-2">
                          <Button variant="primary" className="w-full py-3 h-auto text-sm font-bold active:scale-95 uppercase tracking-wider">
@@ -86,7 +88,7 @@ export const Pricing: React.FC = () => {
                 <p className="text-slate-400 text-sm">
                    Besoin d'un écosystème complet (Site + Ads) ?
                 </p>
-                <a href="#services" className="inline-flex items-center gap-1.5 text-slate-900 hover:text-accent-500 transition-colors text-sm font-medium border-b border-slate-300 hover:border-accent-400 pb-0.5">
+                <a href="#services" className="inline-flex items-center gap-1.5 text-slate-900 hover:text-niventy-500 transition-colors text-sm font-medium border-b border-slate-300 hover:border-niventy-400 pb-0.5">
                    Voir nos solutions Webdesign & Création <ArrowRight size={12} />
                 </a>
              </div>

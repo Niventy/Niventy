@@ -75,25 +75,20 @@ export const ServicesList: React.FC = () => {
   const [activeId, setActiveId] = useState<string | null>('02');
 
   return (
-    <section className="bg-white text-slate-900 py-16 min-h-[500px] relative overflow-hidden flex items-center justify-center">
+    <section className="bg-white text-slate-900 py-16 relative overflow-hidden">
 
       <div className="max-w-[1200px] mx-auto w-full px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 md:gap-8">
 
-          {/* Left Column: Title */}
-          <div className="lg:col-span-4">
-            <div className="sticky top-20">
-              <p className="font-accent italic text-slate-400 text-base md:text-lg mb-3">Services</p>
-              <h2 className="text-3xl md:text-5xl font-display font-bold tracking-display leading-[1.05] mb-2 text-slate-900">
-                Ce que nous<br />
-                <span className="font-accent italic normal-case text-accent-500 font-normal">faisons.</span>
-              </h2>
-            </div>
-          </div>
+        {/* Title — full width above */}
+        <div className="mb-10">
+          <p className="font-accent italic text-slate-500 text-2xl md:text-3xl mb-6">Services</p>
+          <h2 className="text-3xl md:text-5xl lg:text-[64px] font-display font-bold tracking-display leading-[1.05] mb-2 text-slate-900">
+            Ce que nous faisons réellement.
+          </h2>
+        </div>
 
-          {/* Right Column: Services List */}
-          <div className="lg:col-span-8">
-            <div className="space-y-0 divide-y divide-slate-200 border-t border-slate-200 border-b">
+        {/* Services List — full width */}
+        <div className="space-y-0 divide-y divide-slate-200 border-t border-slate-200 border-b">
               {services.map((service) => (
                 <div
                   key={service.id}
@@ -102,12 +97,12 @@ export const ServicesList: React.FC = () => {
                 >
                   <div className={`py-1.5 transition-all duration-300 cursor-pointer ${activeId === service.id ? 'opacity-100' : 'opacity-40 hover:opacity-100'}`}>
                     <div className="flex items-start justify-between gap-3">
-                      <h3 className={`text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tight flex-1 transition-all duration-500 ${activeId === service.id ? 'text-accent-500 blur-none' : 'text-slate-300 blur-[0.5px]'}`}>
+                      <h3 className={`text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tight flex-1 transition-all duration-500 ${activeId === service.id ? 'text-amber-400 blur-none' : 'text-slate-300 blur-[0.5px]'}`}>
                         {service.title}
                         <sup className="text-xs ml-1.5 font-normal text-slate-300">{service.id}</sup>
                       </h3>
                       <ArrowUpRight
-                        className={`transform transition-transform duration-300 ${activeId === service.id ? 'rotate-0 text-accent-500' : 'rotate-45 text-slate-300'}`}
+                        className={`transform transition-transform duration-300 ${activeId === service.id ? 'rotate-0 text-amber-400' : 'rotate-45 text-slate-300'}`}
                         size={14}
                       />
                     </div>
@@ -116,17 +111,17 @@ export const ServicesList: React.FC = () => {
                     <div
                       className={`overflow-hidden transition-all duration-500 ease-in-out ${activeId === service.id ? 'max-h-64 opacity-100 mt-1.5' : 'max-h-0 opacity-0'}`}
                     >
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pl-0 md:pl-4 border-l-2 border-accent-500 ml-1">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pl-0 md:pl-4 border-l-2 border-amber-400 ml-1">
                         <ul className="space-y-1 text-slate-500 text-sm font-medium">
                           {service.description.map((item, index) => (
                             <li key={index} className="flex gap-2">
-                              <span className="w-2 h-[1px] bg-accent-400 mt-1.5 shrink-0"></span>
+                              <span className="w-2 h-[1px] bg-amber-400 mt-1.5 shrink-0"></span>
                               {item}
                             </li>
                           ))}
                         </ul>
                         <div className="flex items-end justify-start md:justify-end">
-                          <a href="#" className="inline-flex items-center gap-1.5 text-sm font-bold tracking-widest uppercase text-accent-500 hover:text-accent-700 transition-colors">
+                          <a href="#" className="inline-flex items-center gap-1.5 text-sm font-bold tracking-widest uppercase text-amber-400 hover:text-amber-500 transition-colors">
                             En savoir plus <ArrowUpRight size={12} />
                           </a>
                         </div>
@@ -135,9 +130,6 @@ export const ServicesList: React.FC = () => {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-
         </div>
       </div>
     </section>

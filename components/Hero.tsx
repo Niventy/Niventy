@@ -3,10 +3,9 @@ import { ArrowRight } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const services = [
-    { label: 'MEDIA BUYING', color: 'bg-accent-500 text-white' },
+    { label: 'MEDIA BUYING', color: 'bg-niventy-500 text-white' },
     { label: 'SOCIAL MEDIA', color: 'bg-blue-600 text-white' },
-    { label: 'WEB DESIGN', color: 'bg-emerald-600 text-white' },
-    { label: 'ADS', color: 'bg-amber-500 text-white' },
+    { label: 'WEB DESIGN', color: 'bg-pop-500 text-white' },
   ];
 
   return (
@@ -29,7 +28,7 @@ export const Hero: React.FC = () => {
 
             <h1 className="text-5xl md:text-7xl lg:text-9xl font-display font-bold tracking-display leading-[0.85] text-white">
               <span>Votre audience</span> <br/>
-              <span className="font-accent italic normal-case text-white font-normal">nous attend.</span>
+              <span className="text-white">nous attend.</span>
             </h1>
 
             {/* Service Badges — tilted like Bizu */}
