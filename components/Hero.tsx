@@ -1,5 +1,4 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const services = [
@@ -9,7 +8,7 @@ export const Hero: React.FC = () => {
   ];
 
   return (
-    <section className="relative h-screen overflow-hidden flex flex-col">
+    <section className="relative h-screen overflow-hidden flex flex-col items-center justify-center">
 
       {/* Full-bleed background photo */}
       <img
@@ -18,34 +17,32 @@ export const Hero: React.FC = () => {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10"></div>
+      {/* Dark overlay for impact */}
+      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0, 0, 0, 0.45)' }}></div>
 
-      {/* Main Content - Lower third */}
-      <div className="flex-1 flex items-end pb-24 md:pb-32 relative z-10">
-        <div className="max-w-[1400px] mx-auto w-full px-6 md:px-10">
-          <div className="flex flex-col items-start text-left max-w-5xl gap-8">
+      {/* Centered Content */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 md:px-10 w-full max-w-5xl">
 
-            <h1 className="text-5xl md:text-7xl lg:text-9xl font-display font-bold tracking-display leading-[0.85] text-white">
-              <span>Votre audience</span> <br/>
-              <span className="text-white">nous attend.</span>
-            </h1>
+        <h1 className="font-display font-bold tracking-display leading-[0.95] text-white drop-shadow-2xl">
+          <span className="block text-3xl md:text-5xl lg:text-6xl">Le Marketing qui rend</span>
+          <span className="block font-accent italic font-normal text-cream-100 text-5xl md:text-7xl lg:text-[120px] leading-[0.85] -mt-1 md:-mt-2">
+            des comptes.
+          </span>
+        </h1>
 
-            {/* Service Badges — tilted like Bizu */}
-            <div className="flex flex-wrap items-start justify-start gap-3">
-              {services.map((service, i) => (
-                <span
-                  key={service.label}
-                  className={`px-5 py-2.5 rounded-sm text-sm font-bold uppercase tracking-widest ${service.color} inline-block`}
-                  style={{ transform: `rotate(${i % 2 === 0 ? -2 : 2}deg)` }}
-                >
-                  {service.label}
-                </span>
-              ))}
-            </div>
-
-          </div>
+        {/* Service Badges — tilted, centered below title */}
+        <div className="flex flex-wrap items-center justify-center gap-3 mt-10 md:mt-12">
+          {services.map((service, i) => (
+            <span
+              key={service.label}
+              className={`px-5 py-2.5 rounded-sm text-sm font-bold uppercase tracking-widest ${service.color} inline-block shadow-lg`}
+              style={{ transform: `rotate(${i % 2 === 0 ? -2 : 2}deg)` }}
+            >
+              {service.label}
+            </span>
+          ))}
         </div>
+
       </div>
 
     </section>

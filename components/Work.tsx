@@ -10,7 +10,7 @@ export const Work: React.FC = () => {
           NOS RÉSULTATS
         </div>
         <h2 className="text-3xl md:text-5xl lg:text-[64px] font-display font-bold text-white tracking-display leading-[1.05] max-w-4xl mx-auto mb-6">
-          Pas pour tout le monde. Juste pour les marques qui veulent être <span className="text-niventy-400">impossibles à ignorer.</span>
+          Pas pour tout le monde. Juste pour les entreprises qui veulent être <span className="text-niventy-400">impossibles à ignorer.</span>
         </h2>
         <p className="text-white/40 text-sm md:text-base max-w-2xl mx-auto mb-12">
           Le paid media ce n'est pas dépenser plus, c'est dépenser avec un objectif. Quand les ads sont construites sur un ciblage clair, des créatifs forts et une optimisation constante, l'investissement se transforme en croissance.

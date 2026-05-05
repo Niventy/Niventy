@@ -16,8 +16,8 @@ export const Header: React.FC = () => {
   return (
     <>
       {/* Clean Transparent Header — non-sticky */}
-      <header className="absolute top-0 left-0 right-0 z-50 bg-transparent">
-        <div className="max-w-[1400px] mx-auto w-full px-6 md:px-10 py-5 flex items-center justify-between">
+      <header className="absolute top-6 md:top-10 left-0 right-0 z-50 bg-transparent">
+        <div className="max-w-[1400px] mx-auto w-full px-6 md:px-10 py-2 flex items-center justify-between">
 
           {/* Logo */}
           <a href="#" className="flex-shrink-0 hover:opacity-80 transition-opacity">

@@ -30,8 +30,8 @@ export const Pricing: React.FC = () => {
                       <div>
                          <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2 uppercase">Pack "Meta Ads Ignition"</h3>
                          <div className="flex flex-wrap gap-2 mb-3">
-                            <span className="px-2.5 py-1 rounded-md bg-slate-100 text-xs font-semibold text-slate-600">Gestion 1 Mois</span>
-                            <span className="px-2.5 py-1 rounded-md bg-slate-100 text-xs font-semibold text-slate-600">10 Créas Incluses</span>
+                            <span className="px-2.5 py-1 rounded-md bg-slate-100 text-xs font-semibold text-slate-600">Gestion mensuelle</span>
+                            <span className="px-2.5 py-1 rounded-md bg-slate-100 text-xs font-semibold text-slate-600">Créas incluses</span>
                             <span className="px-2.5 py-1 rounded-md bg-niventy-50 text-xs font-semibold text-niventy-600">Spécial Lead Gen</span>
                          </div>
                          <p className="text-slate-500 leading-relaxed text-sm">
@@ -41,12 +41,12 @@ export const Pricing: React.FC = () => {
 
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2">
                          {[
-                            "Audit Complet & Setup Stratégique",
-                            "10 Créatifs Publicitaires (Images/UGC)",
-                            "Gestion Quotidienne des Campagnes",
-                            "Tracking Avancé (Pixel & API Conversions)",
-                            "Optimisation CPL & CPA",
-                            "Reporting de Performance Hebdo"
+                            "Audit complet & setup stratégique",
+                            "Créatifs publicitaires (Images / Vidéos / UGC)",
+                            "Gestion quotidienne des campagnes",
+                            "Tracking server-side (Pixel & API Conversions)",
+                            "A/B testing créatifs & audiences (CBO / ABO)",
+                            "Reporting de performance hebdo (Looker Studio)"
                          ].map((item, i) => (
                             <li key={i} className="flex items-start gap-2 text-slate-700">
                                <div className="mt-0.5 w-4 h-4 rounded-full bg-niventy-500 flex items-center justify-center shrink-0 text-white">
@@ -61,24 +61,15 @@ export const Pricing: React.FC = () => {
                    {/* Separator */}
                    <div className="w-full lg:w-px h-px lg:h-48 bg-slate-200"></div>
 
-                   {/* Right: Price & CTA */}
-                   <div className="w-full lg:w-auto text-center min-w-[200px]">
-                      <p className="text-niventy-500 text-xs uppercase tracking-wider font-bold mb-2">OFFRE À PARTIR DE</p>
-                      <div className="flex flex-col items-center mb-4">
-                         <div className="flex items-baseline gap-1">
-                            <span className="text-5xl font-bold text-slate-900 tracking-tight">599€</span>
-                            <span className="text-slate-400 font-medium text-sm">HT</span>
-                         </div>
-                      </div>
-                      <div className="space-y-2">
-                         <Button variant="primary" className="w-full py-3 h-auto text-sm font-bold active:scale-95 uppercase tracking-wider">
-                            LANCER MON MOIS D'ESSAI
-                         </Button>
-                         <p className="text-xs text-slate-400">
-                            Sans engagement de durée.<br/>
-                            Places limitées par mois.
-                         </p>
-                      </div>
+                   {/* Right: Quote CTA */}
+                   <div className="w-full lg:w-auto text-center min-w-[220px]">
+                      <p className="text-niventy-500 text-xs uppercase tracking-wider font-bold mb-3">Offre sur devis</p>
+                      <p className="text-slate-500 text-sm leading-relaxed mb-5 max-w-[240px] mx-auto">
+                         Tarif personnalisé selon votre budget média, vos objectifs et votre secteur.
+                      </p>
+                      <Button variant="primary" className="w-full py-3 h-auto text-sm font-bold active:scale-95 uppercase tracking-wider">
+                         OBTENIR UN DEVIS
+                      </Button>
                    </div>
                 </div>
              </div>

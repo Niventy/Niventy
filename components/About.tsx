@@ -9,7 +9,7 @@ export const About: React.FC = () => {
       <div className="max-w-[1200px] mx-auto text-center">
         <p className="font-accent italic text-slate-500 text-2xl md:text-3xl mb-6">À propos de nous</p>
         <h2 className="text-3xl md:text-5xl lg:text-[64px] font-display font-bold text-slate-900 tracking-display leading-[1.05] mb-8">
-          Nous rendons les marques<br/>
+          Nous rendons les entreprises<br/>
           <span className="text-amber-400">impossibles à ignorer.</span><span className="text-amber-400">®</span>
         </h2>
 
@@ -67,7 +67,7 @@ export const About: React.FC = () => {
         {/* Row 2 — 3 cards, overlapping offset */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:-mt-2">
           {/* Card 3 — Pink — Tracking */}
-          <div className="bg-slate-100 rounded-2xl p-7 md:p-8 min-h-[200px] flex flex-col gap-5 transform md:rotate-1 hover:rotate-0 transition-transform duration-300">
+          <div className="bg-white rounded-2xl p-7 md:p-8 min-h-[200px] flex flex-col gap-5 transform md:rotate-1 hover:rotate-0 transition-transform duration-300">
             <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center shadow-sm">
               <BarChart3 size={20} className="text-slate-600" />
             </div>
@@ -78,7 +78,7 @@ export const About: React.FC = () => {
           </div>
 
           {/* Card 4 — Grey — Créatif */}
-          <div className="bg-slate-100 rounded-2xl p-7 md:p-8 min-h-[200px] flex flex-col gap-5 transform md:-rotate-1 hover:rotate-0 transition-transform duration-300">
+          <div className="bg-white rounded-2xl p-7 md:p-8 min-h-[200px] flex flex-col gap-5 transform md:-rotate-1 hover:rotate-0 transition-transform duration-300">
             <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center shadow-sm">
               <Brain size={20} className="text-slate-600" />
             </div>
@@ -89,7 +89,7 @@ export const About: React.FC = () => {
           </div>
 
           {/* Card 5 — Grey — Transparence */}
-          <div className="bg-slate-100 rounded-2xl p-7 md:p-8 min-h-[200px] flex flex-col gap-5 transform md:rotate-1 hover:rotate-0 transition-transform duration-300">
+          <div className="bg-white rounded-2xl p-7 md:p-8 min-h-[200px] flex flex-col gap-5 transform md:rotate-1 hover:rotate-0 transition-transform duration-300">
             <div className="w-11 h-11 rounded-xl bg-white flex items-center justify-center shadow-sm">
               <Shield size={20} className="text-slate-600" />
             </div>

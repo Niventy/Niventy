@@ -23,14 +23,14 @@ const reviews = [
 
 export const Testimonials: React.FC = () => {
   return (
-    <section className="py-16 bg-white relative overflow-hidden">
+    <section className="py-16 bg-cream-100 relative overflow-hidden">
       <div className="max-w-[1200px] mx-auto w-full px-4 relative z-10">
 
         {/* Title */}
         <div className="text-center mb-12">
           <p className="font-accent italic text-slate-500 text-2xl md:text-3xl mb-6">Nos clients</p>
           <h3 className="text-3xl md:text-5xl lg:text-[64px] font-display font-bold text-slate-900 tracking-display leading-[1.05]">
-            Les marques qui nous font confiance.
+            Ils nous ont réellement fait confiance.
           </h3>
         </div>
 
